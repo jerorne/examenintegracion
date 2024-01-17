@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="17.357" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Iniciar sesión en el sistema" name="Ingreso de nombre de usuario con datos almacenados en BD" time="6.004">
+<system-out><![CDATA[
+Given el usuario esta en la pagina de inicio de sesion......................passed
+When el usuario introduce "usuario1" en el campo nombreUsuario y "contraseña1" en el campo password.passed
+Then el usuario debería ser redirigido a la página de inicio................passed
+]]></system-out>
+</testcase>
+<testcase classname="Iniciar sesión en el sistema" name="Ingreso de nombre de usuario y password con datos erróneos" time="5.687">
+<system-out><![CDATA[
+Given el usuario esta en la pagina de inicio de sesion......................passed
+When el usuario introduce "usuario_invalido" en el campo nombreUsuario y "password_invalido" en el campo password.passed
+Then el usuario debería ver un mensaje "Nombre de usuario o contraseña incorrecto.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Registrar Hora Médica" name="Registro de Hora Médica" time="5.541">
+<system-out><![CDATA[
+Given el usuario está en la página de agendar cita..........................passed
+When el usuario introduce el ID de mascota "3"..............................passed
+And el usuario introduce el Rut del Dueño "12345678-9"......................passed
+And el usuario introduce el Nombre de la Mascota "Pelusa"...................passed
+And el usuario introduce la Hora "12:45"....................................passed
+And el usuario introduce la Fecha '2024/04/25'..............................passed
+And el usuario presiona el botón "Agendar Cita".............................passed
+Then el usuario de la agenda debería ver un mensaje "Tu cita ha sido agendada correctamente.".passed
+]]></system-out>
+</testcase>
+</testsuite>
