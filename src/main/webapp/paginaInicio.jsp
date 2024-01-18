@@ -16,7 +16,5 @@
         <li><a href=verAgendas.jsp>Ver Citas</a></li>
     </ul>
 
-    <!-- Agrega más contenido o funcionalidad según tus necesidades -->
-
 </body>
 </html>
