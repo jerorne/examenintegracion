@@ -10,7 +10,7 @@
 <body>
     <h1>Agendas Programadas</h1>
     <% 
-        List<Cita> citas = AgendarDao.obtenerCitas(); // Asegúrate de que esta línea se ejecute correctamente
+        List<Cita> citas = AgendarDao.obtenerCitas();
         if (citas != null) {
     %>
     <table>
