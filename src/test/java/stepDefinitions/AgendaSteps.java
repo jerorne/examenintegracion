@@ -75,7 +75,7 @@ public class AgendaSteps {
 
     @Then("el usuario de la agenda debería ver un mensaje {string}")
     public void el_usuario_de_la_agenda_debería_ver_un_mensaje(String expectedMessage) {
-        WebElement mensaje = driver.findElement(By.cssSelector("p.success-message")); // Ajusta el selector CSS según tu aplicación
+        WebElement mensaje = driver.findElement(By.cssSelector("p.success-message"));
         assertEquals(expectedMessage, mensaje.getText());
     }
     
